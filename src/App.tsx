@@ -15,17 +15,25 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [stack, setStack] = useState<Technology[]>([]);
 
-  // Fetch the technology list from the JSON file on mount.
-  // The loading state exists so the UI can show a spinner while the
-  // request is in flight (on a local file this resolves almost instantly,
-  // but the mechanism is what the assignment checks for).
-  useEffect(() => {
+
+  // Fetch the technology list from the JSON file.
+  // A small artificial delay is added on purpose so the loading spinner
+  // is actually visible (a local JSON file normally resolves instantly).
+  const loadTechnologies = () => {
     setLoading(true);
     fetch("/technologies.json")
       .then((res) => res.json())
-      .then((data: Technology[]) => setTechnologies(data))
+      .then((data: Technology[]) => {
+        setTimeout(() => setTechnologies(data), 600);
+      })
       .catch(() => toast.error("Failed to load technologies. Please refresh."))
-      .finally(() => setLoading(false));
+      .finally(() => {
+        setTimeout(() => setLoading(false), 600);
+      });
+  };
+
+  useEffect(() => {
+    loadTechnologies();
   }, []);
 
   const stackIds = stack.map((item) => item.id);
