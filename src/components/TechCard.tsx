@@ -24,8 +24,15 @@ export default function TechCard({ tech, isAdded, onAdd }: TechCardProps) {
           {tech.category}
         </span>
         <span className="text-slate-500">{tech.difficulty}</span>
-        <span className="ml-auto flex items-center gap-1 font-medium text-slate-700">
-          <span className="text-amber-400">★</span>
+                <span className="ml-auto flex items-center gap-1 font-medium text-slate-700">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="h-4 w-4 text-amber-400"
+          >
+            <path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.8L10 14.77l-5.2 2.75.99-5.8-4.21-4.1 5.82-.85L10 1.5z" />
+          </svg>
           {tech.rating}
         </span>
       </div>
