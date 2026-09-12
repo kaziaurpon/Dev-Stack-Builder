@@ -79,7 +79,9 @@ export default function Navbar() {
           ))}
         </nav>
       )}
-      <div className="bg-gradient-brand h-[2px] w-full" />
+      <div className="bg-gradient-brand h-[3px] w-full" />
+      
     </header>
   );
 }
+
