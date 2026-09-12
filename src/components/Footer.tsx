@@ -23,14 +23,17 @@ export default function Footer() {
               software.
             </p>
             <div className="mt-5 flex gap-4 text-sm font-medium text-slate-500">
-              <a href="https://github.com" className="hover:text-slate-900">
+              <a href="https://github.com" className="group relative hover:text-slate-900">
                 GitHub
+                <span className="bg-gradient-brand absolute -bottom-0.5 left-0 h-px w-0 transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="https://twitter.com" className="hover:text-slate-900">
+              <a href="https://twitter.com" className="group relative hover:text-slate-900">
                 Twitter
+                <span className="bg-gradient-brand absolute -bottom-0.5 left-0 h-px w-0 transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="https://linkedin.com" className="hover:text-slate-900">
+              <a href="https://linkedin.com" className="group relative hover:text-slate-900">
                 LinkedIn
+                <span className="bg-gradient-brand absolute -bottom-0.5 left-0 h-px w-0 transition-all duration-300 group-hover:w-full" />
               </a>
             </div>
           </div>
@@ -43,8 +46,12 @@ export default function Footer() {
               <ul className="mt-4 flex flex-col gap-2.5">
                 {group.links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-sm text-slate-500 hover:text-slate-900">
+                    <a
+                      href="#"
+                      className="group relative text-sm text-slate-500 transition hover:text-slate-900"
+                    >
                       {link}
+                      <span className="bg-gradient-brand absolute -bottom-0.5 left-0 h-px w-0 transition-all duration-300 group-hover:w-full" />
                     </a>
                   </li>
                 ))}
