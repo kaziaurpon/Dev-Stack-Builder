@@ -8,7 +8,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 ![DaisyUI](https://img.shields.io/badge/DaisyUI-5-5A0EF8?logo=daisyui&logoColor=white)
 
-🔗 **Live Demo:** [https://your-live-link.vercel.app](https://your-live-link.vercel.app)
+🔗 **Live Site:** [https://dev-stack-builder-one.vercel.app](https://dev-stack-builder-one.vercel.app)
 
 ---
 
@@ -45,11 +45,6 @@ npm run dev
 ```
 
 The app will be available at `http://localhost:5173`.
-
-## 📤 Submission
-
-- **GitHub Repository:** [https://github.com/kaziaurpon/Dev-Stack-Builder](https://github.com/kaziaurpon/Dev-Stack-Builder)
-- **Live Site:** [https://your-live-link.vercel.app](https://your-live-link.vercel.app)
 
 ---
 
